@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Welcome to the Result System</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/uploads/logo.jpg" alt="Logo">
+                <h1>Result Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#login-options">Login</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Welcome to the Result Management System</h2>
+            <p>This platform allows students to easily access their academic results and enables admins to upload and manage student results efficiently.</p>
+            <p>Choose your login option below to proceed:</p>
+        </div>
+    </section>
+
+    <!-- Login Options Section -->
+    <section id="login-options">
+        <div class="container">
+            <h2>Select Login Option</h2>
+            <div class="login-buttons">
+                <a href="{{ url_for('admin_login') }}" class="btn btn-admin">Admin Login</a>
+                <a href="{{ url_for('student_login') }}" class="btn btn-student">Student Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <p>Email: <a href="mailto:support@resultsystem.com">support@resultsystem.com</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Result Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

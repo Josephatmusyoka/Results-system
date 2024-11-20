@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Your Results</h1>
+    </header>
+
+    <div class="student-results">
+        <h2>Available Results</h2>
+        <ul class="results-list">
+            <li>
+                <a href="/student/result/example_result.pdf" download>Download Result for Semester 1</a>
+            </li>
+            <li>
+                <a href="/student/result/example_result2.pdf" download>Download Result for Semester 2</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

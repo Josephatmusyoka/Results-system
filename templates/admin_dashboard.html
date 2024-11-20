@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <div class="admin-dashboard">
+        <h2>Upload Result Slips</h2>
+        <div class="upload-section">
+            <form action="/admin/upload" method="POST" enctype="multipart/form-data">
+                <label for="student_id">Student ID</label>
+                <input type="text" name="student_id" id="student_id" required>
+                
+                <label for="result">Select Result File</label>
+                <input type="file" name="result" id="result" accept=".pdf,.jpg,.png" required>
+                
+                <button type="submit">Upload Result</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
