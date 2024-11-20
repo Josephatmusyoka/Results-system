@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 
 # Initialize Flask app
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '949ae20fe9e1bb442a04029cacfb691e'  # Used for session management and flash messages
+app.config['SECRET_KEY'] = ''  # Used for session management and flash messages
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user_data.db'  # Connect to your database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)  # Initialize SQLAlchemy with the app
